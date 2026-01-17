@@ -5,6 +5,7 @@ export default function ThemeBtn() {
     
     const {themeMode, lightTheme, darkTheme} = useTheme()
     const onChangeBtn = (e) => {
+        // Serial NO - 1 This function determines that if the user checked the toggle or not, and store it in global object, which is here useTheme that we imported in line no 2 that has one variable themeMode and two methods darkTheme and lighTheme. once it get stored in global object than comes the logic to change the theme which is in App.jsx.
         const darkModeStatus = e.currentTarget.checked
         if (darkModeStatus) {
             darkTheme()
@@ -12,6 +13,7 @@ export default function ThemeBtn() {
             lightTheme()
         }
     }
+
     return (
         <label className="relative inline-flex items-center cursor-pointer">
             <input
