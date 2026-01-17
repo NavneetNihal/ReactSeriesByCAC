@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* This line enables the "class" strategy in Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+/* Your theme overrides go here, or leave it empty */
+}
