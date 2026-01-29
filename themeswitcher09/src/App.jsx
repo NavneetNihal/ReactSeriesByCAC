@@ -6,6 +6,7 @@ import Card from './Components/card'
 
 function App() {
   const [themeMode, setThemeMode] = useState("light")
+  // Notes -
  //  Serial NO - 3  if the global object has the info in memory that it is lighTheme than we are running a function which set or update themeMode by setThemeMode method and store this "light" as string inside themeMode.
 
   const lightTheme = () => {
@@ -15,7 +16,6 @@ function App() {
   const darkTheme = () => {
     setThemeMode("dark")
   }
-
   // Actual change in theme
 
  // Serial NO - 5  Meanwhile useEffect runs and clear the html doesn't matter it is light or dark it just clears it so we can set the theme coz if we dont clear it and themeMode sets it as dark or it has already light class then it will clash.
