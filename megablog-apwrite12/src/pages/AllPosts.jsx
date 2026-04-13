@@ -17,7 +17,7 @@ function AllPosts() {
             <Container>
                 {posts.map((post) => (
                    <div key={post.$id} className='p-2 w-1/4'>
-                    <Postcard post={post} />
+                    <PostCard post={post} />
                    </div>
                 ))}
             </Container>
