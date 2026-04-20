@@ -5,7 +5,10 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [value, setValue] = useState(1)
+  console.log("App rendered", Math.random());
+  const [value, setValue] = useState({
+    value: 0,
+  })
 
 
 
@@ -19,13 +22,13 @@ function App() {
   // }
 
   const clickMe = () => {
-    console.log("logged");
+    setValue(value + 1)
   }
 
 
   return (
     <>
-    <h1>Main value: {value}</h1>
+    <h1>Main value: {value.value}</h1>
     <button
     onClick={clickMe}
     >Click to multiply by 5</button>
